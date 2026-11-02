@@ -16,7 +16,6 @@ Technically speaking, the Surplus Buffer is calculated as the internal balance o
 surplus_buffer = vat.dai(vow) - vat.vice
 ```
 
-
 Thus, the "correct" way to return Dai/USDS to the protocol is by incorporating them into the Surplus Buffer. The downside is that there is no associated address for the Surplus Buffer—it is merely a data entry in the `Vat`.
 
 Instead of making a standard ERC-20 transfer, anyone wishing to return tokens to the protocol must:
@@ -50,3 +49,13 @@ To install the project, clone the repository and set up the necessary dependenci
 git clone https://github.com/dewiz-xyz/dss-blow2.git
 cd dss-blow2
 forge install
+
+## Audits
+
+Audit reports are hosted on the auditors' public portfolio pages:
+
+| Auditor | Report | Date |
+| --- | --- | --- |
+| ChainSecurity | [Sky DSS Blow2](https://www.chainsecurity.com/security-audit/sky-dss-blow2/) | 2025-02-21 |
+
+ChainSecurity reports are cumulative: each portfolio page hosts the latest version of the report, which covers all previously reviewed versions.
